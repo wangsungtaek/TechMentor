@@ -1,0 +1,17 @@
+.SnsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 60px;
+  cursor: pointer;
+
+  .sns_img {
+    width: 52px;
+    height: 52px;
+  }
+  .sns_name {
+    font-size: 12px;
+    color: #505050;
+  }
+}

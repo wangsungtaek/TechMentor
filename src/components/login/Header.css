@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+
+  .logo_img {
+    width: 55px;
+  }
+  .logo_name {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

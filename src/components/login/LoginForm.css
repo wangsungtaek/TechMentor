@@ -1,0 +1,50 @@
+.LoginForm {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px;
+  margin: 40px auto;
+
+  .login_title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .login_form {
+    padding: 0px 20px;
+    margin-bottom: 50px;
+
+    .login_email,
+    .login_password {
+      min-height: 46px;
+      border-radius: 0.25rem;
+      margin-bottom: 10px;
+    }
+    .login_password {
+      margin-bottom: 20px;
+    }
+    .button_wrapper {
+      Button {
+        margin-bottom: 10px;
+      }
+      .password_reset {
+        display: block;
+        text-align: right;
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: #667380;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .snsItem_list {
+    display: flex;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.ComButton {
+  background-color: #3c3c3c;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.ComButton_block {
+  width: 100%;
+}
+
+.ComButton_WHITE {
+  background-color: #fbfbfb;
+  color: #263747;
+  border: 1px solid #d7e2eb;
+}

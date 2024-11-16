@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import DosiSdk from "./pages/DosiSdk";
+import Lbd from "./pages/Lbd";
+import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>Tech Mentor</div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dosiSdk" element={<DosiSdk />} />
+        <Route path="/lbd" element={<Lbd />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
 }

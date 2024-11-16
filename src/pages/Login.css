@@ -1,0 +1,35 @@
+.Login {
+  background-color: #2d85cc;
+  height: 100vh;
+
+  .login_header,
+  .login_body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .login_body {
+    text-align: center;
+    margin-top: 100px;
+
+    .left_area {
+      padding: 50px 20px;
+
+      .description {
+        text-align: start;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .login_img {
+        width: 80%;
+        max-width: 500px;
+      }
+    }
+    @media (max-width: 992px) {
+      .left_area {
+        display: none;
+      }
+    }
+  }
+}
