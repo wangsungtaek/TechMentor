@@ -1,0 +1,56 @@
+.MainHeader {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: gray; */
+
+  margin: 0 auto;
+  padding: 10px;
+
+  .left_area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 30px;
+      border-radius: 5px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding-left: 20px;
+
+      li {
+        padding-left: 20px;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .right_area {
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+
+      font-weight: bold;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}

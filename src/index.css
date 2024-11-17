@@ -1,6 +1,9 @@
 @font-face {
-  font-family: "NotoSansKR";
-  src: url("/NotoSansKR-Regular.ttf");
+  font-family: "Paperlogy-4Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2")
+    format("woff2");
+
+  font-style: normal;
 }
 
 html,
@@ -12,5 +15,5 @@ body {
 
 body * {
   padding: 0;
-  font-family: "NotoSansKR";
+  font-family: "Paperlogy-8ExtraBold";
 }

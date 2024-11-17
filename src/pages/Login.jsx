@@ -15,7 +15,7 @@ const Login = () => {
         <Row>
           <Col xs={24} lg={12} className="left_area">
             <div className="description">
-              반가워요, 테크 서포트를 지원하는 <br />
+              반가워요, 지술 지원을 도와주는 <br />
               테크멘토입니다.
             </div>
             <img className="login_img" src={bgImg} />

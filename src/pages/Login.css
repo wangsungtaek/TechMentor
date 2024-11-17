@@ -16,8 +16,9 @@
 
       .description {
         text-align: start;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 700;
+        line-height: 40px;
         color: white;
       }
 
