@@ -1,4 +1,5 @@
 import MainHeader from "../components/common/MainHeader";
+import ComBanner from "../components/common/ComBanner";
 
 const Home = () => {
   return (
@@ -7,9 +8,10 @@ const Home = () => {
       <MainHeader />
 
       {/* Banner */}
-      <div className="banner_wrapper">
-        <div>배너 이미지</div>
-      </div>
+      <ComBanner
+        title="테크멘토"
+        subtitle="Discover amazing features and content."
+      />
 
       {/* Content */}
       <div className="content_wrapper">
