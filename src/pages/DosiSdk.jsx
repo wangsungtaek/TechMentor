@@ -1,5 +1,11 @@
+import Navigation from "../components/common/Navigation";
+
 const DosiSdk = () => {
-  return <div>DosiSdkView</div>;
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 };
 
 export default DosiSdk;

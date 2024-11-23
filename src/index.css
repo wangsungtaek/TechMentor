@@ -1,9 +1,20 @@
 @font-face {
-  font-family: "Paperlogy-4Regular";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2")
-    format("woff2");
-
+  font-family: "MyFont";
+  src: url("/fonts/Hakgyoansim\ Allimjang\ OTF\ R.otf") format("truetype");
+  font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/Hakgyoansim\ Allimjang\ OTF\ B.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  ---color-text: #c9cedc;
+  ---color-background: #141517;
 }
 
 html,
@@ -15,5 +26,5 @@ body {
 
 body * {
   padding: 0;
-  font-family: "Paperlogy-8ExtraBold";
+  font-family: "MyFont";
 }
