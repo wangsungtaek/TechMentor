@@ -1,0 +1,14 @@
+.content_container {
+  height: 1200px;
+}
+
+.Home .content_container {
+  width: 1200px;
+
+  margin: 0 auto;
+}
+
+.Home .content_container .info_wrapper {
+  display: flex;
+  justify-content: center;
+}

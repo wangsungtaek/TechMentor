@@ -1,0 +1,16 @@
+.Lbd .content_container {
+  width: 1200px; /* 원하는 크기로 설정 */
+
+  margin: 0 auto;
+}
+
+.Lbd .content_container .token_type_wrapper {
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.Lbd .content_container .token_type_wrapper .token_type_title {
+  margin-bottom: 50px;
+}
+.Lbd .content_container .token_type_wrapper .swiper {
+  margin-bottom: 50px;
+}

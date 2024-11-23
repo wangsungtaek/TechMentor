@@ -9,7 +9,7 @@ const ComBanner = ({
 }) => {
   return (
     <div
-      className="banner"
+      className="ComBanner"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

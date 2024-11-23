@@ -1,41 +1,64 @@
+:root {
+  --nav-height: 80px; /* nav의 높이를 변수로 지정 */
+}
+
+.nav_spacing {
+  height: var(--nav-height); /* nav 높이와 동일하게 설정 */
+}
+
 .MainHeader {
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  height: var(--nav-height);
 
-  margin: 0 auto;
-  padding: 10px;
+  background-color: white;
 
-  .left_area {
+  position: fixed; /* 화면에 고정 */
+  top: 0; /* 상단에 위치 */
+  left: 50%; /* 화면의 가운데 기준으로 위치 */
+  transform: translateX(-50%); /* 자신의 너비만큼 왼쪽으로 이동 */
+  z-index: 1000; /* 다른 요소보다 위에 오도록 */
+
+  .header_wrapper {
+    width: 1200px;
+    height: 100%;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    font-weight: bold;
 
-    .logo_wrapper {
-      cursor: pointer;
-    }
+    margin: 0 auto;
+    padding: 0 10px;
 
-    img {
-      width: 30px;
-      border-radius: 5px;
-    }
-    h1 {
-      font-size: 25px;
-    }
-    ul {
-      list-style-type: none;
+    .left_area {
       display: flex;
+      align-items: center;
       gap: 20px;
-      padding-left: 20px;
+      font-weight: bold;
 
-      li {
-        padding-left: 20px;
+      .logo_wrapper {
+        cursor: pointer;
       }
 
-      .ACTIVE {
-        color: #1070be;
+      img {
+        width: 30px;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        padding-left: 20px;
+
+        li {
+          padding-left: 20px;
+        }
+
+        .ACTIVE {
+          color: #1070be;
+        }
       }
     }
   }

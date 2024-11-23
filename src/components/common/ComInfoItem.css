@@ -1,0 +1,28 @@
+.ComInfoItem {
+  box-sizing: border-box;
+  width: 200px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  background-color: rgb(236, 236, 236);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+.ComInfoItme_BUTTON {
+  cursor: pointer;
+}
+
+.ComInfoItem .comInfoItem_img {
+  width: 40px;
+  height: 40px;
+}
+
+.ComInfoItem .comInfoItem_text {
+  font-size: 22px;
+  font-weight: 500;
+}

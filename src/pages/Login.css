@@ -1,6 +1,6 @@
 .Login {
   background-color: #2d85cc;
-  height: 100vh;
+  height: 100%;
 
   .login_header,
   .login_body {
@@ -9,7 +9,7 @@
   }
   .login_body {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 
     .left_area {
       padding: 50px 20px;
