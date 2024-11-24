@@ -27,9 +27,6 @@ const mockTokenType = [
 const Lbd = () => {
   return (
     <div className="Lbd">
-      {/* Header */}
-      <MainHeader />
-
       {/* Banner */}
       <ComBanner
         title={"a21f345"}

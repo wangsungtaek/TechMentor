@@ -1,0 +1,46 @@
+.DosiSdk {
+  width: 100%;
+  background-color: #141517;
+  /* background-color: #2c2d30; */
+
+  padding: 20px;
+  color: #fff;
+}
+
+/* title */
+.DosiSdk .contract_info {
+  margin-bottom: 70px;
+}
+
+.DosiSdk .contract_info .contract_title,
+.DosiSdk .token_type_info .token_type_title {
+  display: inline-block;
+  margin: 0px;
+}
+
+.DosiSdk .contract_info .contect_id_en,
+.DosiSdk .token_type_info .token_type_en {
+  margin-left: 10px;
+  color: #5a606a;
+}
+
+/* contract List */
+.DosiSdk .contect_id_list,
+.DosiSdk .token_type_list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 13px;
+
+  margin-top: 30px;
+}
+
+.DosiSdk .contect_id_list .contract_id,
+.DosiSdk .token_type_list .token_type {
+  list-style: none;
+  cursor: pointer;
+}
+
+.DosiSdk .token_type_list .token_type {
+  max-width: 220px;
+}

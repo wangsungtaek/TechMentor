@@ -10,9 +10,6 @@ import ComInfoItem from "../components/common/ComInfoItem";
 const Home = () => {
   return (
     <div className="Home">
-      {/* Header */}
-      <MainHeader />
-
       {/* Banner */}
       <ComBanner
         title="테크멘토"

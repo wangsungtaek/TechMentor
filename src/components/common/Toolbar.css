@@ -1,0 +1,41 @@
+.Toolbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #141517;
+  color: #c9cedc;
+
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.Toolbar .logo_wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.Toolbar .logo_wrapper .menu_btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.Toolbar .logo_wrapper .logo {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.Toolbar .login_info_wrapper .login_btn {
+  cursor: pointer;
+}
+
+.Toolbar .login_info_wrapper .info_img {
+  font-size: 20px;
+  cursor: pointer;
+
+  background-color: #636363;
+  border-radius: 50%;
+  padding: 10px;
+}

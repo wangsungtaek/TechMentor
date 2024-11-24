@@ -1,5 +1,6 @@
 .Navigation {
   width: 240px;
+  min-width: 240px;
   min-height: 100vh;
 
   display: flex;
@@ -11,25 +12,8 @@
   transition: width 0.3s;
 }
 .Navigation_collapsed {
-  /* width: 100px; */
-}
-
-/* 헤더 */
-.Navigation .nav_header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  min-height: 70px;
-
-  background-color: #3f434b;
-}
-
-.Navigation .nav_header .menu_btn {
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
+  width: 60px;
+  min-width: 60px;
 }
 
 /* 네비게이션 */
@@ -37,7 +21,7 @@
   padding: 10px;
 }
 .Navigation .nav_collapsed {
-  width: 100px;
+  padding: 10px 0px;
 }
 
 .Navigation .nav ul {
@@ -52,6 +36,8 @@
 
   border-radius: 10px;
   padding: 10px;
+
+  cursor: pointer;
 }
 .Navigation .nav ul li:hover {
   background-color: #2c2c2e;
@@ -84,4 +70,8 @@
   width: 4ch;
   word-wrap: break-word;
   white-space: normal;
+}
+
+.Navigation .ACTIVE {
+  color: #007aff;
 }

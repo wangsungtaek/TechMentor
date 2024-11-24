@@ -1,62 +1,95 @@
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   ReconciliationOutlined,
   ApiOutlined,
-  MenuOutlined,
   AppstoreOutlined,
+  SettingOutlined,
 } from "@ant-design/icons";
 
 import "./Navigation.css";
 
-const Navigation = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+const Navigation = ({ isCollapsed }) => {
+  const nav = useNavigate();
+  const { pathname } = useLocation();
+  console.log(pathname);
 
-  const toggleMenu = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+  const isActive = (path) => (pathname === path ? "ACTIVE" : "");
 
   return (
     <div className={`Navigation ${isCollapsed ? "Navigation_collapsed" : ""}`}>
-      {/* Header */}
-      <header className="nav_header">
-        <div className="menu_btn" onClick={toggleMenu}>
-          <MenuOutlined />
-        </div>
-        <h1 className="logo">테크멘토</h1>
-      </header>
-
       {/* Nav */}
       <nav className={`nav ${isCollapsed ? "nav_collapsed" : ""}`}>
         <ul>
-          <li className={`${isCollapsed ? "manu_collapsed" : ""}`}>
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/tech-status"
+            )}`}
+            onClick={() => nav("/tech-status")}
+          >
             <span className="icon">
               <ReconciliationOutlined />
             </span>
             <span className="label">기술 지원 현황</span>
           </li>
-          <li className={`${isCollapsed ? "manu_collapsed" : ""}`}>
+
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/lbd"
+            )}`}
+            onClick={() => nav("/lbd")}
+          >
             <span className="icon">
               <ApiOutlined />
             </span>
             <span className="label">LBD API</span>
           </li>
-          <li className={`${isCollapsed ? "manu_collapsed" : ""}`}>
+
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/dosi-sdk"
+            )}`}
+            onClick={() => nav("/dosi-sdk")}
+          >
             <span className="icon">
               <ApiOutlined />
             </span>
             <span className="label">DOSI SDK</span>
           </li>
-          <li className={`${isCollapsed ? "manu_collapsed" : ""}`}>
+
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/ops-helper"
+            )}`}
+            onClick={() => nav("/ops-helper")}
+          >
             <span className="icon">
               <AppstoreOutlined />
             </span>
             <span className="label">운영 지원</span>
           </li>
-          <li className={`${isCollapsed ? "manu_collapsed" : ""}`}>
+
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/settle-helper"
+            )}`}
+            onClick={() => nav("/settle-helper")}
+          >
             <span className="icon">
               <AppstoreOutlined />
             </span>
             <span className="label">정산 지원</span>
+          </li>
+
+          <li
+            className={`${isCollapsed ? "manu_collapsed" : ""}${isActive(
+              "/config"
+            )}`}
+            onClick={() => nav("/config")}
+          >
+            <span className="icon">
+              <SettingOutlined />
+            </span>
+            <span className="label">설정</span>
           </li>
         </ul>
       </nav>
